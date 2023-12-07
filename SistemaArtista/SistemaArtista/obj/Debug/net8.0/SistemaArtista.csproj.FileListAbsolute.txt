@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\bin\Debug\net8.0\SistemaArtista.exe
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\bin\Debug\net8.0\SistemaArtista.deps.json
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\bin\Debug\net8.0\SistemaArtista.runtimeconfig.json
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\bin\Debug\net8.0\SistemaArtista.dll
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\bin\Debug\net8.0\SistemaArtista.pdb
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\obj\Debug\net8.0\SistemaArtista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\obj\Debug\net8.0\SistemaArtista.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\obj\Debug\net8.0\SistemaArtista.AssemblyInfo.cs
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\obj\Debug\net8.0\SistemaArtista.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\obj\Debug\net8.0\SistemaArtista.dll
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\obj\Debug\net8.0\refint\SistemaArtista.dll
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\obj\Debug\net8.0\SistemaArtista.pdb
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\obj\Debug\net8.0\SistemaArtista.genruntimeconfig.cache
+C:\Users\Administrator\Documents\CSHARP\SistemaArtista\SistemaArtista\obj\Debug\net8.0\ref\SistemaArtista.dll
