@@ -70,11 +70,12 @@ public class GerenciadorArquivo
             writer.Close();
         }
     }
-
+   
     public void AdcionarArtista(Artista artista)
     {
         this.Artistas.Add(artista);
     }
+    
     public void ExcluirArtista(Artista artista)
     {
         this.Artistas.Remove(artista);

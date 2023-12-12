@@ -26,6 +26,8 @@ internal class Program
 
             Console.WriteLine("7 - Excluir Artistas");
 
+            Console.WriteLine("8 - Excluir musicas");
+
             Console.WriteLine("0 - Sair");
 
              selectedMenu = Console.ReadLine();
@@ -82,6 +84,12 @@ internal class Program
                 Console.WriteLine("Excluindo artistas...");
                 ExcluirArtista();
                 Console.WriteLine("Artista excluido com sucesso.");
+                Console.WriteLine();
+            break;
+            case "8":
+                Console.WriteLine("Excluindo musicas...");
+                ExcluirMusica();
+                Console.WriteLine("Musica excluida com sucesso.");
                 Console.WriteLine();
             break;
 
@@ -178,7 +186,6 @@ private static void ExibirMusicasCriadas()
 
 }
 
-
     private static void ExibirMusicasArtista()
     {
           Console.WriteLine("Digite o nome do artista");
@@ -272,7 +279,20 @@ private static void ExibirMusicasCriadas()
         manager.ExcluirArtista(artista);
     }
 
+ private static void ExcluirMusica()
+    {
+        Console.WriteLine("Digite o nome da musica");
+        string nomeMusica = Console.ReadLine();
+        Musica musica = manager.Musicas.FirstOrDefault(x => x.Nome == nomeMusica);
 
+        if(musica == null)
+        {
+             Console.WriteLine("Não encontrei a musica");
+            return;
+        }
+
+        manager.ExcluirMusica(musica);
+    }
 
 
 
