@@ -10,7 +10,6 @@ internal class Program
         var selectedMenu = "";
         manager = new GerenciadorArquivo(); 
 
-
         while (stopKey != selectedMenu)
         {
             Console.WriteLine("1 - Cadastrar Artista");
@@ -40,40 +39,61 @@ internal class Program
         switch(selectedMenu)
         {
             case "1":
+                Console.WriteLine("Cadastrando Artistas...");
                 CadastrarArtista();
+                Console.WriteLine("Artista Cadastrado com sucesso.");
+                Console.WriteLine();
                 break;
 
             case "2":
+                Console.WriteLine("Cadastrando músicas...");
                 CadastrarMusica();
+                Console.WriteLine("Musicas cadastradas com sucesso.");
+                Console.WriteLine();
                 break;
 
             case "3": 
+                Console.WriteLine("Adcinando artistas em músicas existentes...");
                 EnturmarMusicaEmArtista();
+                Console.WriteLine("Artista adcionado na música com sucesso.");
+                Console.WriteLine();
                 break;
 
             case "4":
+                Console.WriteLine("Exibindo músicas...");
                 ExibirMusicasCriadas();
+                Console.WriteLine();
                 break;
 
             case "5":
+                Console.WriteLine("Exibindo artistas...");
                 ExibirMusicasArtista();
+                Console.WriteLine();
                 break;
 
             case "6":
+                Console.WriteLine("Editando artistas...");
                 EditarArtistas();
+                Console.WriteLine("Artista editado com sucesso.");
+                Console.WriteLine();
                 break;
 
             case "7":
+                Console.WriteLine("Excluindo artistas...");
                 ExcluirArtista();
+                Console.WriteLine("Artista excluido com sucesso.");
+                Console.WriteLine();
             break;
 
             case "0":
                 manager.SalvarListas();
                 Console.WriteLine("Saindo do programa...");
+                Console.WriteLine();
                 break;
                 
             default:
                 Console.WriteLine("Opção invalida");
+                Console.WriteLine();
                 break;
         }
     }
@@ -99,13 +119,13 @@ internal class Program
     {
         Musica musica = new Musica();
 
-        Console.WriteLine("Digite o nome da musica"); 
+        Console.WriteLine("Digite o nome da musica:"); 
         musica.Nome = Console.ReadLine();
 
-        Console.WriteLine("Digite o genero da musica"); 
+        Console.WriteLine("Digite o genero da musica:"); 
         musica.Genero = Console.ReadLine();
 
-         Console.WriteLine("Digite a duração  da musica"); 
+         Console.WriteLine("Digite a duração da musica:"); 
         musica.Duracao = TimeOnly.Parse(Console.ReadLine());
 
         manager.AdcionarMusica(musica);
@@ -184,7 +204,7 @@ private static void ExibirMusicasCriadas()
         
         else
         {
-            // try {
+            try { //erro null exeption 
                 foreach (var item in artista.MusicasArtista)
                 {
                     Console.WriteLine($"Nome da musica: {item.Nome}");
@@ -193,8 +213,8 @@ private static void ExibirMusicasCriadas()
                     Console.WriteLine("");
                 }
 
-            // }
-            // catch{}
+             }
+            catch{return;}
             
         }
            
